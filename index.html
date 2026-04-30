@@ -364,7 +364,7 @@ footer a{color:rgba(59,130,246,.7);text-decoration:none;font-weight:600}
 
 <script>
 var calY,calM,citaFecha='',svcActual='';
-const N8N='https://whitemoon.app.n8n.cloud/webhook/chatbot-podologia';
+const N8N='https://whitemoonagency.app.n8n.cloud/webhook/chatbot-podologia';
 function sendToN8N(data){fetch(N8N,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});}
 function showSection(id){document.querySelectorAll('section').forEach(function(s){s.classList.remove('active');});document.getElementById(id).classList.add('active');document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('active');});document.getElementById('nav-'+id).classList.add('active');window.scrollTo(0,0);}
 function openChat(){document.getElementById('wm-overlay').classList.add('open');}
